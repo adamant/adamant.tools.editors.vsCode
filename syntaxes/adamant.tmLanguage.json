@@ -8,7 +8,10 @@
             "include": "#operators"
         },
         {
-            "include": "#strings"
+            "include": "#string-literal"
+        },
+        {
+            "include": "#char-literal"
         },
         {
             "include": "#modifiers"
@@ -31,25 +34,34 @@
                 },
                 {
                     "name": "keyword.other.adamant",
-                    "match": "\\b(let|var)\\b"
-                },
-                {
-                    "name": "keyword.type.adamant",
-                    "match": "\\b(void)\\b"
+                    "match": "\\b(let|var|ref)\\b"
                 },
                 {
                     "name": "keyword.type.adamant",
                     "match": "\\b(bool|code_point|string|u?int\\d*|float\\d*|u?fixed\\d+\\.\\d+|decimal\\d*|size|offset|void)\\b"
+                },
+                {
+                    "name": "variable.language.adamant",
+                    "match": "\\b(self)\\b"
                 }
             ]
         },
         "operators": {
             "patterns": [{
-                "name": "keyword.operator.assignment.adamant",
-                "match": "="
-            }]
+                    "name": "keyword.operator.assignment.adamant",
+                    "match": "="
+                },
+                {
+                    "name": "keyword.operator.expression.adamant",
+                    "match": "\\b(and|or|xor|not)\\b"
+                },
+                {
+                    "name": "keyword.operator.new.adamant",
+                    "match": "\\b(new)\\b"
+                }
+            ]
         },
-        "strings": {
+        "string-literal": {
             "name": "string.quoted.double.adamant",
             "begin": "\"",
             "end": "\"",
@@ -58,11 +70,43 @@
                 "match": "\\\\."
             }]
         },
+        "char-literal": {
+			"name": "string.quoted.single.cs",
+			"begin": "'",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.char.begin.cs"
+				}
+			},
+			"end": "(\\')|((?:[^\\\\\\n])$)",
+			"endCaptures": {
+				"1": {
+					"name": "punctuation.definition.char.end.cs"
+				},
+				"2": {
+					"name": "invalid.illegal.newline.cs"
+				}
+			},
+			"patterns": [
+				{
+					"include": "#string-character-escape"
+				}
+			]
+        },
+        "string-character-escape": {
+			"name": "constant.character.escape.cs",
+			"match": "\\\\."
+		},
         "modifiers": {
             "patterns": [{
-                "name": "storage.modifier.visibility.adamant",
-                "match": "\\b(public|protected|internal|private)\\b"
-            }]
+                    "name": "storage.modifier.visibility.adamant",
+                    "match": "\\b(public|protected|internal|private)\\b"
+                },
+                {
+                    "name": "storage.modifier.mut.adamant",
+                    "match": "\\b(mut)\\b"
+                }
+            ]
         },
         "punctuation": {
             "patterns": [{
@@ -95,14 +139,33 @@
                         }
                     },
                     "end": "(?=$)"
+                },
+                {
+                    "name": "comment.block.documentation.cs",
+                    "begin": "(?<!/)///(?!/)",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.adamant"
+                        }
+                    },
+                    "end": "(?=$)"
                 }
             ]
         },
         "constants": {
             "patterns": [{
-                "name": "constant.language.none.adamant",
-                "match": "\\b(none )\\b"
-            }]
+                    "name": "constant.language.none.adamant",
+                    "match": "\\b(none)\\b"
+                },
+                {
+                    "name": "constant.language.boolean.true.adamant",
+                    "match": "\\b(true)\\b"
+                },
+                {
+                    "name": "constant.language.boolean.false.adamant",
+                    "match": "\\b(false)\\b"
+                }
+            ]
         }
     },
     "scopeName": "source.adamant"
