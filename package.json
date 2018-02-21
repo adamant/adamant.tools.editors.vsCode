@@ -1,0 +1,26 @@
+{
+    "name": "adamant",
+    "displayName": "Adamant",
+    "description": "Adamant language support",
+    "version": "0.0.1",
+    "publisher": "walkercoderanger",
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "adamant",
+            "aliases": ["Adamant", "adamant"],
+            "extensions": [".ad"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "adamant",
+            "scopeName": "source.adamant",
+            "path": "./syntaxes/adamant.tmLanguage.json"
+        }]
+    }
+}
