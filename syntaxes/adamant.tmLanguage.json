@@ -34,7 +34,7 @@
                 },
                 {
                     "name": "keyword.other.adamant",
-                    "match": "\\b(let|var|ref)\\b"
+                    "match": "\\b(let|var|class|struct|enum)\\b"
                 },
                 {
                     "name": "keyword.type.adamant",
@@ -103,8 +103,8 @@
                     "match": "\\b(public|protected|internal|private)\\b"
                 },
                 {
-                    "name": "storage.modifier.mut.adamant",
-                    "match": "\\b(mut)\\b"
+                    "name": "storage.modifier.adamant",
+                    "match": "\\b(mut|ref)\\b"
                 }
             ]
         },
