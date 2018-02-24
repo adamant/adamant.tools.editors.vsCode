@@ -1,0 +1,1 @@
+The invalid illegal newline has to hilight the character before the newline, hence the strange non-capture group

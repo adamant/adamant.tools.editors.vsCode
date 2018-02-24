@@ -71,32 +71,31 @@
             }]
         },
         "char-literal": {
-			"name": "string.quoted.single.cs",
-			"begin": "'",
-			"beginCaptures": {
-				"0": {
-					"name": "punctuation.definition.char.begin.cs"
-				}
-			},
-			"end": "(\\')|((?:[^\\\\\\n])$)",
-			"endCaptures": {
-				"1": {
-					"name": "punctuation.definition.char.end.cs"
-				},
-				"2": {
-					"name": "invalid.illegal.newline.cs"
-				}
-			},
-			"patterns": [
-				{
-					"include": "#string-character-escape"
-				}
-			]
+            "name": "string.quoted.single.cs",
+            "begin": "'",
+            "beginCaptures": {
+                "0": {
+                    "name": "punctuation.definition.char.begin.cs"
+                }
+            },
+            "comment": "Need to account for ''' and '\\''",
+            "end": "(?:\\'|\\\\)?(\\')|((?:[^\\n])$)",
+            "endCaptures": {
+                "1": {
+                    "name": "punctuation.definition.char.end.cs"
+                },
+                "2": {
+                    "name": "invalid.illegal.newline.cs"
+                }
+            },
+            "patterns": [{
+                "include": "#string-character-escape"
+            }]
         },
         "string-character-escape": {
-			"name": "constant.character.escape.cs",
-			"match": "\\\\."
-		},
+            "name": "constant.character.escape.cs",
+            "match": "\\\\."
+        },
         "modifiers": {
             "patterns": [{
                     "name": "storage.modifier.visibility.adamant",
