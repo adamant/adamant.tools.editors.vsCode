@@ -48,6 +48,11 @@
         },
         "operators": {
             "patterns": [{
+                    "comment": "Needs to come before assignment operator so this match has precedence",
+                    "name": "keyword.operator.comparision.adamant",
+                    "match": "==|=/="
+                },
+                {
                     "name": "keyword.operator.assignment.adamant",
                     "match": "="
                 },
@@ -58,6 +63,11 @@
                 {
                     "name": "keyword.operator.new.adamant",
                     "match": "\\b(new)\\b"
+                },
+
+                {
+                    "name": "keyword.operator.relational.adamant",
+                    "match": ">=|<=|>|<"
                 }
             ]
         },
