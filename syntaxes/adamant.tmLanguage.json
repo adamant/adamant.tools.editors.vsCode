@@ -53,6 +53,11 @@
                     "match": "==|=/="
                 },
                 {
+                    "comment": "Needs to come before subtract operator",
+                    "name": "keyword.operator.arrow.adamant",
+                    "match": "->"
+                },
+                {
                     "name": "keyword.operator.assignment.adamant",
                     "match": "="
                 },
