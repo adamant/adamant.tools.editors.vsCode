@@ -38,7 +38,7 @@
                 },
                 {
                     "name": "keyword.type.adamant",
-                    "match": "\\b(bool|code_point|string|u?int\\d*|float\\d*|u?fixed\\d+\\.\\d+|decimal\\d*|size|offset|void)\\b"
+                    "match": "\\b(bool|code_point|string|u?int\\d*|byte|float\\d*|u?fixed\\d+\\.\\d+|decimal\\d*|size|offset|void)\\b"
                 },
                 {
                     "name": "variable.language.adamant",
