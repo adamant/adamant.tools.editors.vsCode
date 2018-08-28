@@ -1,4 +1,4 @@
-# adamant README
+# Adamant Readme
 
 This is the README for your extension "adamant". After writing up a brief description, we recommend including the following sections.
 
