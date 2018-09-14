@@ -30,11 +30,11 @@
         "keywords": {
             "patterns": [{
                     "name": "keyword.control.adamant",
-                    "match": "\\b(if|else|match|loop|while|for|in|break|continue|return)\\b"
+                    "match": "\\b(if|else|match|loop|while|foreach|in|break|next|return|yield)\\b"
                 },
                 {
                     "name": "keyword.other.adamant",
-                    "match": "\\b(let|var|class|struct|enum|fn|get|set|invariant|requires|ensures|where)\\b"
+                    "match": "\\b(let|var|class|struct|enum|fn|get|set|invariant|requires|ensures|where|namespace|using)\\b"
                 },
                 {
                     "name": "keyword.type.adamant",
@@ -121,7 +121,7 @@
                 },
                 {
                     "name": "storage.modifier.adamant",
-                    "match": "\\b(mut|ref|owned)\\b"
+                    "match": "\\b(mut|ref|owned|const)\\b"
                 }
             ]
         },
