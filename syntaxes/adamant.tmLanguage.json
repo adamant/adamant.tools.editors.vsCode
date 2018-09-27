@@ -34,7 +34,7 @@
                 },
                 {
                     "name": "keyword.other.adamant",
-                    "match": "\\b(let|var|class|struct|enum|type|alias|fn|get|set|invariant|requires|ensures|where|namespace|using|external|safe|unsafe|uninitialized|delete|sizeof)\\b"
+                    "match": "\\b(let|var|class|struct|enum|type|alias|fn|get|set|invariant|requires|ensures|where|namespace|using|external|safe|unsafe|uninitialized|delete|sizeof|operator)\\b"
                 },
                 {
                     "name": "keyword.type.adamant",
