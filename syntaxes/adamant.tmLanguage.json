@@ -34,11 +34,11 @@
                 },
                 {
                     "name": "keyword.other.adamant",
-                    "match": "\\b(let|var|class|struct|enum|type|alias|fn|get|set|invariant|requires|ensures|where|namespace|using|external|safe|unsafe|uninitialized|delete|sizeof|operator)\\b"
+                    "match": "\\b(let|var|class|struct|enum|type|alias|fn|get|set|invariant|requires|ensures|where|namespace|using|external|safe|unsafe|uninitialized|delete|sizeof|operator|implicit|extend|abstract|override|params)\\b"
                 },
                 {
                     "name": "keyword.type.adamant",
-                    "match": "\\b(bool|code_point|string|u?int\\d*|byte|float\\d*|u?fixed\\d+\\.\\d+|decimal\\d*|size|offset|void|never)\\b"
+                    "match": "\\b(bool|code_point|string|u?int\\d*|byte|float\\d*|u?fixed\\d+\\.\\d+|decimal\\d*|size|offset|void|never|Self)\\b"
                 },
                 {
                     "name": "variable.language.adamant",
