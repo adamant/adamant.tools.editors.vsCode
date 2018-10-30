@@ -30,15 +30,23 @@
         "keywords": {
             "patterns": [{
                     "name": "keyword.control.adamant",
-                    "match": "\\b(if|else|match|loop|while|foreach|in|break|next|return|yield)\\b"
+                    "match": "\\b(if|else|match|loop|while|foreach|in|break|next|return|yield|throw)\\b"
                 },
                 {
                     "name": "keyword.other.adamant",
-                    "match": "\\b(let|var|class|struct|enum|type|alias|fn|get|set|invariant|requires|ensures|where|namespace|using|external|safe|unsafe|uninitialized|delete|sizeof|operator|implicit|extend|abstract|override|params)\\b"
+                    "match": "\\b(let|var|class|struct|enum|type|alias|fn|get|set|where|namespace|using|external|uninitialized|delete|sizeof|operator|implicit|extend|params|may|no|old)\\b"
+                },
+                {
+                    "name": "keyword.modifier.adamant",
+                    "match": "\\b(safe|unsafe|abstract|override)\\b"
+                },
+                {
+                    "name": "keyword.contract.adamant",
+                    "match": "\\b(invariant|requires|ensures)\\b"
                 },
                 {
                     "name": "keyword.type.adamant",
-                    "match": "\\b(bool|code_point|string|u?int\\d*|byte|float\\d*|u?fixed\\d+\\.\\d+|decimal\\d*|size|offset|void|never|Self)\\b"
+                    "match": "\\b(bool|string|u?int\\d*|byte|float\\d*|u?fixed\\d+\\.\\d+|decimal\\d*|size|offset|void|never|Self)\\b"
                 },
                 {
                     "name": "variable.language.adamant",
