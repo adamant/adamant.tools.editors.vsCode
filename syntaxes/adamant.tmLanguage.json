@@ -46,7 +46,7 @@
                 },
                 {
                     "name": "keyword.type.adamant",
-                    "match": "\\b(bool|string|u?int\\d*|byte|float\\d*|u?fixed\\d+\\.\\d+|decimal\\d*|size|offset|void|never|Self)\\b"
+                    "match": "\\b(bool|string|u?int\\d*|byte|float\\d*|u?fixed\\d+\\.\\d+|decimal\\d*|size|offset|void|never|Self|any)\\b"
                 },
                 {
                     "name": "variable.language.adamant",
@@ -129,7 +129,7 @@
                 },
                 {
                     "name": "storage.modifier.adamant",
-                    "match": "\\b(mut|ref|owned|const)\\b"
+                    "match": "\\b(mut|ref|owned|const|forever)\\b"
                 }
             ]
         },
