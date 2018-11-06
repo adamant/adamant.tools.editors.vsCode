@@ -34,7 +34,7 @@
                 },
                 {
                     "name": "keyword.other.adamant",
-                    "match": "\\b(let|var|class|struct|enum|type|alias|fn|get|set|where|namespace|using|external|uninitialized|delete|sizeof|operator|implicit|extend|params|may|no|old)\\b"
+                    "match": "\\b(let|var|class|struct|enum|type|alias|fn|get|set|where|namespace|using|external|uninitialized|delete|sizeof|operator|implicit|extend|params|may|no|old|move|copy)\\b"
                 },
                 {
                     "name": "keyword.modifier.adamant",
@@ -71,11 +71,11 @@
                 },
                 {
                     "name": "keyword.operator.expression.adamant",
-                    "match": "\\b(and|or|xor|not)\\b"
+                    "match": "\\b(and|or|xor|not|as)\\b"
                 },
                 {
                     "name": "keyword.operator.new.adamant",
-                    "match": "\\b(new|init|as)\\b"
+                    "match": "\\b(new|init)\\b"
                 },
                 {
                     "name": "keyword.operator.arithmetic.adamant",
