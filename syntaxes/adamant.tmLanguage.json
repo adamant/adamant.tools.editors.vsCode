@@ -30,7 +30,7 @@
         "keywords": {
             "patterns": [{
                     "name": "keyword.control.adamant",
-                    "match": "\\b(if|else|match|loop|while|foreach|in|break|next|return|yield|throw)\\b"
+                    "match": "\\b(if|else|match|loop|while|foreach|in|break|next|return|yield|throw|try)\\b"
                 },
                 {
                     "name": "keyword.other.adamant",
@@ -75,7 +75,7 @@
                 },
                 {
                     "name": "keyword.operator.new.adamant",
-                    "match": "\\b(new|init)\\b"
+                    "match": "\\b(new|init|as)\\b"
                 },
                 {
                     "name": "keyword.operator.arithmetic.adamant",
