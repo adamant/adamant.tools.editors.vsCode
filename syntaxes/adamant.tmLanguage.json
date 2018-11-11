@@ -125,7 +125,7 @@
         "modifiers": {
             "patterns": [{
                     "name": "storage.modifier.visibility.adamant",
-                    "match": "\\b(public|protected|internal|private)\\b"
+                    "match": "\\b(published|public|protected|private)\\b"
                 },
                 {
                     "name": "storage.modifier.adamant",
