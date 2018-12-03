@@ -71,7 +71,7 @@
                 },
                 {
                     "name": "keyword.operator.expression.adamant",
-                    "match": "\\b(and|or|xor|not|as)\\b"
+                    "match": "\\b(and|or|not|as)\\b"
                 },
                 {
                     "name": "keyword.operator.new.adamant",
