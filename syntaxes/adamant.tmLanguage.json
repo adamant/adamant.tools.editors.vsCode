@@ -24,6 +24,9 @@
         },
         {
             "include": "#constants"
+        },
+        {
+            "include": "#reserved-words"
         }
     ],
     "repository": {
@@ -34,7 +37,11 @@
                 },
                 {
                     "name": "keyword.other.adamant",
-                    "match": "\\b(let|var|class|struct|trait|enum|alias|fn|get|set|where|namespace|using|external|uninitialized|delete|operator|implicit|extend|params|may|no|old|move|copy)\\b"
+                    "match": "\\b(let|var|class|struct|trait|enum|fn|get|set|where|namespace|external|uninitialized|delete|operator|implicit|extend|params|may|no|old|move|copy)\\b"
+                },
+                {
+                    "name": "keyword.other.using.adamant",
+                    "match": "\\busing\\b"
                 },
                 {
                     "name": "keyword.modifier.adamant",
@@ -125,7 +132,7 @@
         "modifiers": {
             "patterns": [{
                     "name": "storage.modifier.visibility.adamant",
-                    "match": "\\b(published|public|protected|private)\\b"
+                    "match": "\\b(published|public|protected)\\b"
                 },
                 {
                     "name": "storage.modifier.adamant",
@@ -191,6 +198,12 @@
                     "match": "\\b(false)\\b"
                 }
             ]
+        },
+        "reserved-words": {
+            "patterns": [{
+                "name": "invalid.reserved-word.adamant",
+                "match": "\\b(alias|case|cast|checked|const_cast|continue|default|defer|do|dynamic_cast|extend|extension|fallthrough|for|guard|internal|null|otherwise|package|partial|private|reinterpret_cast|repeat|replace|select|sizeof|size_of|switch|symmetric|transmute|then|type|unchecked|unless|when|xor|yield)\\b"
+            }]
         }
     },
     "scopeName": "source.adamant"
