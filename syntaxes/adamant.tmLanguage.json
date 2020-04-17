@@ -37,11 +37,11 @@
                 },
                 {
                     "name": "keyword.other.adamant",
-                    "match": "\\b(let|var|class|struct|trait|enum|fn|get|set|where|namespace|external|uninitialized|delete|operator|implicit|extend|params|may|no|old|move|copy)\\b"
+                    "match": "\\b(let|var|class|struct|trait|enum|fn|get|set|where|namespace|external|uninitialized|delete|operator|implicit|extend|params|old|move|copy|tag)\\b"
                 },
                 {
                     "name": "keyword.other.using.adamant",
-                    "match": "\\busing\\b"
+                    "match": "\\b(using)\\b"
                 },
                 {
                     "name": "keyword.modifier.adamant",
@@ -50,6 +50,10 @@
                 {
                     "name": "keyword.contract.adamant",
                     "match": "\\b(invariant|requires|ensures)\\b"
+                },
+                {
+                    "name": "keyword.effect.adamant",
+                    "match": "\\b(may|no)\\b"
                 },
                 {
                     "name": "keyword.type.adamant",
@@ -86,11 +90,15 @@
                 },
                 {
                     "name": "keyword.operator.arithmetic.adamant",
-                    "match": "\\+|\\-|\\*"
+                    "match": "(\\+)|(\\-)|(\\*)|(\\/(?!\\/|\\*))"
                 },
                 {
                     "name": "keyword.operator.relational.adamant",
                     "match": ">=|<=|>|<"
+                },
+                {
+                    "name": "keyword.operator.reachability.adamant",
+                    "match": "\\~\\>|\\<\\~"
                 }
             ]
         },
@@ -136,7 +144,7 @@
                 },
                 {
                     "name": "storage.modifier.adamant",
-                    "match": "\\b(mut|ref|owned|const|forever)\\b"
+                    "match": "\\b(mut|ref|owned|iso|held|id|const|forever)\\b"
                 }
             ]
         },
