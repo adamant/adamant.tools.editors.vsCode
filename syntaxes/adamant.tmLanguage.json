@@ -210,7 +210,13 @@
         "reserved-words": {
             "patterns": [{
                 "name": "invalid.reserved-word.adamant",
-                "match": "\\b(alias|case|cast|checked|const_cast|continue|default|defer|do|dynamic_cast|extend|extension|fallthrough|for|guard|internal|null|otherwise|package|partial|private|reinterpret_cast|repeat|replace|select|sizeof|size_of|switch|symmetric|transmute|then|type|unchecked|unless|when|xor|yield)\\b"
+                "match": "\\b(?<!\\\\)(alias|case|cast|checked|const_cast|continue|default|defer|do|dynamic_cast|extend|extension|fallthrough|for|guard|internal|null|otherwise|package|partial|private|reinterpret_cast|repeat|replace|select|sizeof|size_of|switch|symmetric|transmute|then|type|unchecked|unless|when|xor|yield)\\b"
+            }]
+        },
+        "reserved-operators": {
+            "patterns": [{
+                "name": "invalid.reserved-word.adamant",
+                "match": "\\b(\\*\\*|##|#|`)\\b"
             }]
         }
     },
