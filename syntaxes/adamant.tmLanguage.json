@@ -33,35 +33,35 @@
         "keywords": {
             "patterns": [{
                     "name": "keyword.control.adamant",
-                    "match": "\\b(if|else|match|loop|while|foreach|in|break|next|return|yield|throw|try)\\b"
+                    "match": "\\b(?<!\\\\)(if|else|match|loop|while|foreach|in|break|next|return|yield|throw|try)\\b"
                 },
                 {
                     "name": "keyword.other.adamant",
-                    "match": "\\b(let|var|class|struct|trait|enum|fn|get|set|where|namespace|external|uninitialized|delete|operator|implicit|extend|params|old|move|copy|tag)\\b"
+                    "match": "\\b(?<!\\\\)(let|var|class|struct|trait|enum|fn|get|set|where|namespace|external|uninitialized|delete|operator|implicit|extend|params|old|move|copy|tag)\\b"
                 },
                 {
                     "name": "keyword.other.using.adamant",
-                    "match": "\\b(using)\\b"
+                    "match": "\\b(?<!\\\\)(using)\\b"
                 },
                 {
                     "name": "keyword.modifier.adamant",
-                    "match": "\\b(safe|unsafe|abstract|override)\\b"
+                    "match": "\\b(?<!\\\\)(safe|unsafe|abstract|override)\\b"
                 },
                 {
                     "name": "keyword.contract.adamant",
-                    "match": "\\b(invariant|requires|ensures)\\b"
+                    "match": "\\b(?<!\\\\)(invariant|requires|ensures)\\b"
                 },
                 {
                     "name": "keyword.effect.adamant",
-                    "match": "\\b(may|no)\\b"
+                    "match": "\\b(?<!\\\\)(may|no)\\b"
                 },
                 {
                     "name": "keyword.type.adamant",
-                    "match": "\\b(bool|string|u?int\\d*|byte|float\\d*|u?fixed\\d+\\.\\d+|decimal\\d*|size|offset|void|never|Self|any|type)\\b"
+                    "match": "\\b(?<!\\\\)(bool|string|u?int\\d*|byte|float\\d*|u?fixed\\d+\\.\\d+|decimal\\d*|size|offset|void|never|Self|any|type)\\b"
                 },
                 {
                     "name": "variable.language.adamant",
-                    "match": "\\b(self|base)\\b"
+                    "match": "\\b(?<!\\\\)(self|base)\\b"
                 }
             ]
         },
@@ -82,11 +82,11 @@
                 },
                 {
                     "name": "keyword.operator.expression.adamant",
-                    "match": "\\b(and|or|not|as)\\b"
+                    "match": "\\b(?<!\\\\)(and|or|not|as)\\b"
                 },
                 {
                     "name": "keyword.operator.new.adamant",
-                    "match": "\\b(new|init)\\b"
+                    "match": "\\b(?<!\\\\)(new|init)\\b"
                 },
                 {
                     "name": "keyword.operator.arithmetic.adamant",
@@ -140,11 +140,11 @@
         "modifiers": {
             "patterns": [{
                     "name": "storage.modifier.visibility.adamant",
-                    "match": "\\b(published|public|protected)\\b"
+                    "match": "\\b(?<!\\\\)(published|public|protected)\\b"
                 },
                 {
                     "name": "storage.modifier.adamant",
-                    "match": "\\b(mut|ref|owned|iso|held|id|const|forever)\\b"
+                    "match": "\\b(?<!\\\\)(mut|ref|owned|iso|held|id|const|forever)\\b"
                 }
             ]
         },
@@ -195,15 +195,15 @@
         "constants": {
             "patterns": [{
                     "name": "constant.language.none.adamant",
-                    "match": "\\b(none)\\b"
+                    "match": "\\b(?<!\\\\)(none)\\b"
                 },
                 {
                     "name": "constant.language.boolean.true.adamant",
-                    "match": "\\b(true)\\b"
+                    "match": "\\b(?<!\\\\)(true)\\b"
                 },
                 {
                     "name": "constant.language.boolean.false.adamant",
-                    "match": "\\b(false)\\b"
+                    "match": "\\b(?<!\\\\)(false)\\b"
                 }
             ]
         },
